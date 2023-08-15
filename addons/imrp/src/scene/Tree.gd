@@ -1,4 +1,4 @@
-tool
+@tool
 extends Tree
 
 
@@ -14,10 +14,13 @@ func build_from_schemas(schemas):
 		if schema['id'] < 0:
 			item.set_selectable(0, false)
 		else:
-			item.set_tooltip(0, schema['tooltip'])
+			item.set_tooltip_text(0, schema['tooltip'])
 			item.set_icon(0, schema['icon'])
 			item.set_text(0, schema['text'])
 			item.set_metadata(0, schema['id'])
+	
+	if root.get_child_count() > 0:
+		root.get_child(0).select(0) 
 
 
 func selected_schema_id():

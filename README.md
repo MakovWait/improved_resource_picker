@@ -1,6 +1,8 @@
 # Improved resource picker
 ResourcePicker with search as an alternative to default one.
 
+**<code>Note</code>: this is <code>4.x</code> version, <code>3.x</code> version can be found <a href="https://github.com/MakovWait/improved_resource_picker/tree/3.x">here</a>.**
+
 Problem
 -----------------
 
@@ -24,7 +26,15 @@ How to install
 This is a regular editor plugin.
 Copy the contents of `addons/imrp` into the same folder in your project, and activate it in your project settings.
 
+or plug with <a href="https://github.com/imjp94/gd-plug">gd-plug</a>:
+```gdscript
+plug("MakovWait/improved_resource_picker")
+```
+
 About
 ----------------
+
+Godot4 editor plugin.
+More plugins <a href="https://github.com/MakovWait/godot4-plugins">godot4-plugins</a>
 
 This addon is a jam submission you can find here: https://makovwait.itch.io/imrpoved-resource-picker-for-godot

@@ -1,4 +1,4 @@
 extends Node2D
 
 
-export var resource : Resource
+@export var resource : Resource
