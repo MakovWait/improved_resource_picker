@@ -8,12 +8,12 @@ const ImprovedResourcePicker = preload(
 
 
 func _enter_tree():
-	var editor_tree = get_editor_interface().get_tree()
+	var editor_tree = get_editor_interface().get_base_control().get_tree()
 	editor_tree.node_added.connect(_on_node_added)
 
 
 func _exit_tree():
-	var editor_tree = get_editor_interface().get_tree()
+	var editor_tree = get_editor_interface().get_base_control().get_tree()
 	editor_tree.node_added.disconnect(_on_node_added)
 
 
