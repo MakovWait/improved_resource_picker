@@ -26,4 +26,4 @@ func _on_native_picker_show(native_picker: PopupMenu):
 	var ex_picker = ImprovedResourcePicker.instantiate()
 	get_editor_interface().get_base_control().add_child(ex_picker)
 	ex_picker.decorate(native_picker)
-	ex_picker.popup_centered(Vector2(400, 600) * get_editor_interface().get_editor_scale())
+	ex_picker.popup_centered(Vector2(420, 600) * get_editor_interface().get_editor_scale())

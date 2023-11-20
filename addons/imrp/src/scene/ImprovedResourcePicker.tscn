@@ -5,7 +5,6 @@
 [ext_resource type="Script" path="res://addons/imrp/src/scene/Tree.gd" id="3"]
 
 [node name="ImprovedResourcePicker" type="ConfirmationDialog"]
-visible = true
 dialog_hide_on_ok = false
 script = ExtResource("2")
 

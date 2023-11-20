@@ -9,6 +9,10 @@ var schemas = []
 
 
 func _ready():
+	visibility_changed.connect(func():
+		if not visible:
+			_on_ExchangedResourcePicker_popup_hide()
+	)
 	line_edit.clear_button_enabled = true
 	line_edit.focus_neighbor_bottom = line_edit.get_path()
 	line_edit.focus_neighbor_top = line_edit.get_path()
@@ -114,9 +118,8 @@ func _handle_confirm():
 	if id == -1:
 		return
 	
-	native.emit_signal("id_pressed", id)
-	
 	hide()
+	native.emit_signal("id_pressed", id)
 
 
 func _on_Tree_item_activated():
@@ -134,6 +137,5 @@ func _on_ExchangedResourcePicker_custom_action(action):
 	if id == -1:
 		return
 	
-	native.emit_signal("id_pressed", id)
-	
 	hide()
+	native.emit_signal("id_pressed", id)
