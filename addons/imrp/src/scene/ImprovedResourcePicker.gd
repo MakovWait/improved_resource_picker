@@ -45,10 +45,11 @@ func decorate(native: PopupMenu):
 	var rest_options_idx = -1
 	
 	for idx in range(native.get_item_count()):
+		if idx == 0 and native.is_item_separator(idx):
+			continue
 		if native.is_item_separator(idx):
 			rest_options_idx = idx + 1
 			break
-			
 		self.schemas.append(
 			{
 				"id": native.get_item_id(idx),

@@ -12,7 +12,7 @@ config_version=5
 
 config/name="exchanged_resource_picker"
 run/main_scene="res://demo/Node2D.tscn"
-config/features=PackedStringArray("4.0")
+config/features=PackedStringArray("4.5")
 config/icon="res://icon.png"
 
 [editor_plugins]
